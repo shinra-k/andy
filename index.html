@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nouvelle lettre 💌</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hearts"></div>
+
+    <div id="page1" class="page page1 active">
+      <div class="container">
+        <h1>Bonjour Andy 💖</h1>
+        <p>Vous avez une nouvelle lettre</p>
+
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+          <div class="badge">1</div>
+          <div class="envelope">
+            <div class="flap"></div>
+            <div class="body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="page2" class="page page2">
+      <div class="paper">
+        <h2>Lettre d'amitié</h2>
+        <p id="typed-text"></p>
+        <div style="text-align: center; margin-top: 24px">
+          <button onclick="goBack()">Retour</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scrip.js"></script>
+  </body>
+</html>
